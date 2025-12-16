@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Introdução do Nosso Livro</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .especial-text { max-width: 1120px; margin: 0 auto; }
+    .especial-text p { margin: 24px 0; }
+    .citação { font-style: italic; opacity: .98; }
+    .divider { height:1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent); margin: 70px 0; }
+    #timer { margin: 26px 0; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <main class="content-page center">
+    <div class="container fade-in" style="text-align: center;">
+      <a class="btn-ghost" href="index.html">← Voltar ao Menu</a>
+      <h1 style="margin-top: 15px;">A Introdução do Nosso Livro</h1>
+      <h2>Quatro Meses É Pouco Pra Medir</h2><div id="timer">Carregando nosso tempo...</div>
+
+      <div class="especial-text" style="text-align: left; line-height: 2.35;">
+    <p class="citação">“Algumas histórias não precisam de muito tempo para serem profundas. Precisam de verdade.”</p>
+
+    <p>Quatro meses. Um número simples, quase tímido quando colocado no calendário. Para muitos, parece pouco. Para outros, parece cedo demais para sentir tanto. Mas o tempo, quando se trata de sentimento, não se mede em quantidade, se mede em intensidade, em presença, em tudo aquilo que se constrói quando duas pessoas decidem ficar.</p>
+
+    <p>Nesses quatro meses, nós não apenas conversamos. Nós nos revelamos. Dividimos medos que não costumam sair fácil, mostramos partes que normalmente ficam escondidas, aprendemos a respeitar silêncios e a valorizar cada palavra dita com cuidado. Construímos algo que não dependeu de toque, de rotina física ou de presença imediata. Dependemos apenas de intenção.</p>
+
+    <p>Mesmo à distância, eu senti nascer algo sólido. Algo que não se apoia em idealizações vazias, mas em constância. Em ficar. Em ouvir. Em aprender a ser melhor para alguém que importa. Eu aprendi que amar não é sobre acelerar etapas, mas sobre dar significado a cada uma delas.</p>
+
+    <p>Esses meses foram suficientes para eu entender que o que a gente construiu tem raiz. Tem estrutura. Tem cuidado. Não foi impulso, não foi carência, não foi acaso. Foi encontro, mesmo com quilômetros entre a gente.</p>
+
+    <div class="divider"></div>
+
+    <p>Essa introdução não fala de promessas exageradas ou finais perfeitos. Ela fala de começo consciente. De duas pessoas que decidiram tentar com maturidade, mesmo sem garantias, mesmo sem certezas absolutas. Porque o que existe aqui não é ilusão, é escolha.</p>
+
+    <p>Este não é o encerramento de uma fase bonita. É o primeiro capítulo de uma história que ainda tem muito espaço para crescer. Um capítulo onde aprendemos o ritmo um do outro, onde erramos e ajustamos, onde entendemos que amor de verdade não corre, mas também não para.</p>
+
+    <p>Eu olho para esses quatro meses e vejo algo raro: segurança emocional em construção. Vejo confiança sendo criada palavra por palavra. Vejo um nós que não se baseia apenas em sentir, mas em cuidar.</p>
+
+    <p>Se esse é apenas o começo, eu fico em paz. Porque o começo já é honesto. Já é profundo. Já é real.</p>
+
+    <div class="divider"></div>
+
+    <p>Eu quero continuar escrevendo essa história sem pressa, mas com entrega. Quero viver os próximos meses com o mesmo respeito, a mesma atenção, o mesmo carinho. Quero atravessar desafios ao seu lado, aprender com cada fase e crescer junto com você.</p>
+
+      <p>Quero que cada capítulo seja escrito com verdade. Que os dias bons sejam celebrados, e os dias difíceis sejam atravessados com parceria. Que a gente construa algo que não dependa apenas de emoção, mas de presença constante.</p>
+
+    <p>Se um dia alguém perguntar quando tudo começou, talvez quatro meses pareçam pouco. Mas só nós sabemos o que coube nesse tempo. Só nós sabemos o que foi vivido, sentido e escolhido.</p>
+
+    <p>Esse livro não precisa de pressa para acabar. Ele precisa de cuidado para continuar. E eu escolho continuar.</p>
+
+    <p style="text-align:center; font-weight:bold; font-size:1.2rem; color:var(--accent); margin-top: 50px;">Quatro meses é pouco pra medir. Mas é mais do que suficiente pra eu saber, com calma e certeza, que eu quero escrever cada próxima página com você. 💞</p>
+  </div>
+</div>
+
+  </main>
+  <script>
+  const START_DATE = new Date('August 16, 2025 16:07:00'); function updateTimer() { const now = new Date(); const diff = now - START_DATE; const timerElement = document.getElementById('timer');
+
+if (diff < 0) {
+  timerElement.innerHTML = `Faltam ${Math.ceil(Math.abs(diff) / (1000 * 60 * 60 * 24))} dias para o nosso começo!`;
+  return;
+}
+
+const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+timerElement.innerHTML = `
+  ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos
+  <small>Juntos desde ${START_DATE.toLocaleDateString('pt-BR')}</small>
+`;
+
+}
+
+updateTimer(); setInterval(updateTimer, 1000); </script>
+
+</body>
+</html>

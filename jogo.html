@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Joguinho - Pegue os Corações</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="center">
+    <div class="container fade-in" style="text-align:center">
+      <h2>Mini Joguinho - Pegue os Corações ❤</h2>
+      <canvas id="game" width="520" height="360"></canvas>
+      <div style="display:flex;gap:12px;align-items:center;justify-content:center;margin-top:12px">
+        <div id="score">0 / 10</div>
+        <button id="resetBtn" class="btn-ghost">Resetar</button>
+      </div>
+      
+      <br>
+      <button class="btn" onclick="location.href='index.html'">Voltar</button>
+      <div id="finish" style="margin-top:18px;opacity:0;transition:opacity .4s">
+        <p>Parabénsss meu amor, você concluiu o jogo, clique aqui em baixo para ver a surpresaa!</p>
+        <a id="openEspecial" href="especial.html" class="btn">Ver Surpresa</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
